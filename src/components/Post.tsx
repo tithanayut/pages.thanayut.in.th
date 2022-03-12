@@ -2,9 +2,10 @@ import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import Container from "./Container";
 import LoadingSpinner from "./LoadingSpinner/LoadingSpinner";
-import useContent from "../hooks/useContent";
 import Alert from "./Alert";
+import useContent from "../hooks/useContent";
 
 const Post = () => {
   const params = useParams();
@@ -20,16 +21,20 @@ const Post = () => {
 
   return (
     <main className="my-6 flex flex-col items-center space-y-6 md:my-10">
-      <article className="w-[90%] rounded-lg bg-[#e8e8e8] p-8 md:w-[80%] lg:w-[70%]">
+      <Container>
         <h2 className="border-b-2 text-3xl">
           <Link to={`/posts/${content.metadata.slug}`}>{content.metadata.title}</Link>
         </h2>
-        <h6 className="mt-1 mb-6 text-sm text-gray-600">{content.metadata.date}</h6>
+        <h6 className="my-2 text-gray-600">{content.metadata.date}</h6>
+      </Container>
 
-        <div className="prose max-w-[100%]">
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{content.content}</ReactMarkdown>
+      <Container>
+        <div className="prose mt-[-12px] max-w-[100%]">
+          <ReactMarkdown linkTarget="_blank" remarkPlugins={[remarkGfm]}>
+            {content.content}
+          </ReactMarkdown>
         </div>
-      </article>
+      </Container>
     </main>
   );
 };

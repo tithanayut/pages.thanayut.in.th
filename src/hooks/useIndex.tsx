@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import { PostInfo } from "../interfaces/PostInfo";
+import { PostMetadata } from "../interfaces/PostMetadata";
 
 const useIndex = () => {
   const [loading, setLoading] = useState<boolean>(true);
-  const [index, setIndex] = useState<PostInfo[]>([]);
+  const [index, setIndex] = useState<PostMetadata[]>([]);
 
   useEffect(() => {
     const fetchIndex = async () => {

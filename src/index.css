@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&family=Noto+Sans+Thai:wght@600&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 500;
   background-color: #f8f8f8;
 }
 
@@ -13,13 +15,12 @@ h2,
 h3,
 h4 {
   font-family: "Noto Sans Thai", sans-serif;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 p,
 h5,
 h6 {
-  font-family: sans-serif;
   font-size: 16px;
 }
 
@@ -61,11 +62,11 @@ h6 {
 }
 
 .prose img {
-  max-width: 60%;
+  max-width: 65%;
   margin: 22px auto;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
   .prose img {
     max-width: 100%;
   }

@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { PostInfo } from "../interfaces/PostInfo";
+import { PostMetadata } from "../interfaces/PostMetadata";
 
 const useContent = (slug: string) => {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string>("");
-  const [content, setContent] = useState<{ metadata: PostInfo; content: string }>({
+  const [content, setContent] = useState<{ metadata: PostMetadata; content: string }>({
     metadata: { slug: "", title: "", date: "", filename: "" },
     content: "",
   });
@@ -21,7 +21,7 @@ const useContent = (slug: string) => {
       const resIndex = await fetch(`/contents/index.json`);
       const index = await resIndex.json();
 
-      const metadata = index.posts.find((p: PostInfo) => p.slug === slug);
+      const metadata = index.posts.find((p: PostMetadata) => p.slug === slug);
       if (!metadata) {
         setError("Content Not Found");
         setLoading(false);

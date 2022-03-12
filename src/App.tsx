@@ -10,6 +10,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Posts />} />
+        <Route path="/posts" element={<Posts />} />
         <Route path="/posts/:slug" element={<Post />} />
         <Route path="*" element={<Alert message="Content Not Found" />} />
       </Routes>
