@@ -1,0 +1,10 @@
+{
+  "posts": [
+    {
+      "slug": "hello-world",
+      "title": "Hello, World!",
+      "date": "12 March 2022",
+      "filename": "2022/hello.md"
+    }
+  ]
+}
