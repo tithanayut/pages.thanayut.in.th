@@ -59,3 +59,14 @@ h6 {
   line-height: 2;
   margin: 10px 0;
 }
+
+.prose img {
+  max-width: 60%;
+  margin: 22px auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .prose img {
+    max-width: 100%;
+  }
+}
