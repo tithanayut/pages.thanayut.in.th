@@ -23,7 +23,7 @@ h6 {
 }
 
 .prose {
-  font-size: 18px;
+  font-size: 16px;
 }
 .prose h1 {
   font-size: 32px;
@@ -33,19 +33,19 @@ h6 {
 }
 .prose h2 {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.5;
   margin: 12px 0;
 }
 .prose h3 {
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.5;
   margin: 12px 0;
 }
 .prose h4 {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.5;
   margin: 12px 0;
 }
@@ -53,7 +53,7 @@ h6 {
 .prose h5,
 .prose h6,
 .prose p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.65;
   margin: 10px 0;
