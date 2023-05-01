@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: "Sarabun", sans-serif;
+  font-family: "thongterm", sans-serif;
   font-weight: 400;
   background-color: #f8f8f8;
 }
@@ -12,7 +12,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Noto Sans Thai", sans-serif;
+  font-family: "termtem", sans-serif;
   font-weight: 700;
 }
 
@@ -26,25 +26,25 @@ h6 {
   font-size: 18px;
 }
 .prose h1 {
-  font-size: 28px;
-  font-weight: 500;
+  font-size: 32px;
+  font-weight: 700;
   line-height: 1.5;
   margin: 12px 0;
 }
 .prose h2 {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 500;
   line-height: 1.5;
   margin: 12px 0;
 }
 .prose h3 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 500;
   line-height: 1.5;
   margin: 12px 0;
 }
 .prose h4 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 1.5;
   margin: 12px 0;
